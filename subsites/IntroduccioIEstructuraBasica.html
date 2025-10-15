@@ -46,8 +46,82 @@
 				Passam a emprar HTML!
 			</p>
 
-			<h2>Estructura bàsica HTML</h2>
-			
+			<h2>Estructura bàsica HTML, elements, etiquetes i atributs</h2>
+			<p>Un element a HTML és quan defineixes un objecte a HTML. Per posar un exemple, aquest text que estàs llegint és un element a HTML.</p>
+			<p>Una etiqueta és el text <strong>amb el que defineixes el tipus d'un element</strong>. Al cas d'aquest text (i el d'adalt), és <em>p</em></p>
+			<p>Un atribut és un valor adicional que pots incloure a un element HTML. D'aquest mostraré exemples més endavant.</p>
+			<p>Ara, per l'estructura d'un document HTML:<br>
+			Primer, al teu arxiu HTML (arxiu que el seu nom acaba amb .html), inclou aquesta línia:</p>
+			<p><b>&lt!DOCTYPE html&gt</b></p>
+			<p>Seguit d'un element amb <em>etiqueta d'html:</em></p>
+			<p><b>&lthtml&gt &lt/html&gt</b></p>
+			<p>TOT el que vulguis incluir a la teva pàgina web (en quant a estructura), ha d'estar entre el <b>&lthtml&gt</b> i el <b>&lt/html&gt</b>.</p>
+			<p>(Com és el cas del "i el" a la frase de dalt.)</p>
+			<p>
+				Adicionalment, a dins de l'HTML, pots incloure un atribut<br>
+				(si, aquest és un dels exemples d'atributs que abans he dit que mencionaria més endavant)<br>
+				amb nom "lang", que defineix l'idioma i el dialecte.<br>
+				Per exemple, si vull fer un document HTML en català estàndart, hauría de fer el següent:<br>
+				<b>&lthtml lang="ca"&gt</b><br>
+				O si vull fer-ho en castellà d'Espanya, hauría de ser:<br>
+				<b>&lthtml lang="es-ES"&gt</b><br>
+				Si no vull que sigui d'Espanya, sinò d'Argentina, ha de ser:<br>
+				<b>&lthtml lang="es-AR"&gt</b><br>
+				Deixaré aquí una públicació a GitHub que en menciona uns quants més:
+			</p>
+			<a href="https://gist.github.com/JamieMason/3748498" target="_blank">https://gist.github.com/JamieMason/3748498</a>
+			<p>
+				Un document HTML <strong>es divideix en dues parts</strong>:
+				<ol type="1">
+					<li>
+						<i>El head, a on s'inclouran detalls del navegador.</i><br>
+						Al cas d'aquesta pàgina, el head és: <br>
+						<img alt="Head" src="../assets/head.png">
+					</li>
+					<li>
+						<i>El body, a on s'inclourà el que es mostra a la pàgina com a tal.</i> <br>
+						<b>&ltbody&gt&lt/body&gt</b>
+					</li>
+				</ol>
+			</p>
+			<h2>&lthead&gt&lt/head&gt</h2>
+			<p>El head, com hem explicat abans, s'empra per definir característiques pel navegador.</p>
+			<p>Emprarem com a referéncia l'imatge d'abans:</p>
+			<img alt="Head" src="../assets/head.png">
+			<p>A dins del head (el head d'aquesta imatge), trobam 3 elements:</p>
+			<ul>
+				<li>
+					<b>&ltmeta charset="utf-8"&gt</b><br>
+					Defineix quins caràcters emprar a la web, en aquest cas, <a href="https://en.wikipedia.org/wiki/UTF-8" target="_blank">UTF-8.</a>
+				</li>
+				<li>
+					<b>&ltmeta name="robots" content="noindex"&gt</b><br>
+					Defineix que la pàgina no ha de ser indexada per motors de cerca com Google o Microsoft Edge (que no ha d'apareixer si la cerques).<br>
+					Al meu cas, es per que aquesta web és una tasca (bon dia profe).
+				</li>
+				<li>
+					<b>&lttitle&gtIntroducció i estructura bàsica&lt/title&gt</b><br>
+					Defineix el títol de la pàgina, i si no em creus, mira a dalt.
+				</li>
+			</ul>
+			<p>Ara, a l'hora de fer tu la teva pàgina web, principalment hauràs de fer servir el primer i el darrer.</p>
+			<h2>&ltbody&gt&lt/body&gt</h2>
+			<p>
+				D'aquest en tenim <b>TANT PER EXPLICAR</b> que emprarém les altres seccions d'aquesta pàgina.
+				Però resumidament, és a on definiràs el que surtirà a la teva pàgina.
+			</p>
+			<h2>Document HTML bàsic final</h2>
+			<p><b>
+				&lt!DOCTYPE html&gt<br>
+				&lthtml lang="ca-ES"&gt<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&lthead&gt<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltmeta charset="utf-8"&gt<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lttitle&gtTítol aquí&lt/title&gt<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&lt/head&gt<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&ltbody&gt<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&lt/body&gt<br>
+				&lt/html&gt
+			</b></p>
 		</main>
 		<footer>
 			Fet per <b>Adrián Matas Muñoz</b>,<br>
